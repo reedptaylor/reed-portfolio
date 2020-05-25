@@ -6,11 +6,12 @@ import Plot
 struct MyWebsite: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
-        case posts
-        case overdrive
-        case daiscover
-        case resume
-        case futureProjects
+        case posts = "posts"
+        case overdrive = "overdrive"
+        case daiscover = "daiscover"
+        case scrum = "scrum"
+        case resume = "resume"
+        case future_projects = "future_projects"
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
@@ -18,9 +19,9 @@ struct MyWebsite: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
+    var url = URL(string: "https://reedtaylor.org")!
     var name = "Reed Taylor"
-    var description = "All things Reed"
+    var description = "Reed's Blog and Portfolio"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
@@ -32,7 +33,7 @@ try MyWebsite().publish(
         .step(named: "Default section titles") { context in
             context.mutateAllSections { section in
                 switch section.id {
-                case .futureProjects:
+                case .future_projects:
                     section.title = "Future Projects"
                 case .posts:
                     section.title = "Posts"
@@ -40,12 +41,16 @@ try MyWebsite().publish(
                     section.title = "Daiscover"
                 case .overdrive:
                     section.title = "Overdrive"
+                case .scrum:
+                    section.title = "ScrumPokerCards"
                 case .resume:
                     section.title = "Resume"
                 }
             }
         },
         .copyResources(includingFolder: true),
-        .generateSiteMap()
+        .generateSiteMap(),
+        .deploy(using: .scp("reed@reedtaylor.org"))
     ]
 )
+//.gitHub("reedptaylor/reed-portfolio")
