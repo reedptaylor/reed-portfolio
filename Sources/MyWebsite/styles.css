@@ -24,6 +24,11 @@ body {
     text-align: left;
 }
 
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 header {
     background-color: #ffe6b3;
 }
@@ -54,9 +59,9 @@ nav li {
     line-height: 1.5em;
 }
 
-nav li a.selected {
-    text-decoration: underline;
-}
+/*nav li a.selected {*/
+/*    text-decoration: underline;*/
+/*}*/
 
 h1 {
     margin-bottom: 20px;

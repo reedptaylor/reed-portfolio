@@ -16,10 +16,9 @@ extension Theme where Site == MyWebsite {
                 .body(
                     .header(for: context, selectedSection: nil),
                     .wrapper(
-                        .h1(.text(index.title)),
-                        .p(
-                            .class("description"),
-                            .text(context.site.description)
+                        .h1(.text(context.site.description)),
+                        .div(
+                            .raw(index.body.html)
                         ),
                         .h2("Latest posts"),
                         .itemList(
@@ -164,7 +163,13 @@ private extension Node where Context == HTML.BodyContext {
                 .a(.class("site-name"), .href("/"), .text(context.site.name)),
                 .if(sectionIDs.count > 1,
                     .nav(
-                        .ul(.forEach(sectionIDs) { section in
+                        .ul(
+                            .li(.a(
+                                .class(selectedSection == nil ? "selected" : ""),
+                                .href("/"),
+                                .text("About")
+                            )),
+                            .forEach(sectionIDs) { section in
                             .li(.a(
                                 .class(section == selectedSection ? "selected" : ""),
                                 .href(context.sections[section].path),
@@ -205,14 +210,23 @@ private extension Node where Context == HTML.BodyContext {
     static func footer<T: Website>(for site: T) -> Node {
         return .footer(
             .p(
-                .text("Generated using "),
+                .text("Written using Swift. Generated using "),
                 .a(
-                    .text("Publish"),
+                    .text("Publish."),
                     .href("https://github.com/johnsundell/publish")
                 )
             ),
-            .p(.a(
-                .text("RSS feed"),
+            .p(
+            .a(
+                .text("GitHub"),
+                .href("https://github.com/reedptaylor")
+            ), .text(" | "),
+            .a(
+                .text("Twitter"),
+                .href("https://twitter.com/reedptaylor")
+            ), .text(" | "),
+            .a(
+                .text("RSS"),
                 .href("/feed.rss")
             ))
         )

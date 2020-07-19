@@ -7,9 +7,7 @@ struct MyWebsite: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
         case posts = "posts"
-        case overdrive = "overdrive"
-        case daiscover = "daiscover"
-        case scrum = "scrum"
+        case projects = "projects"
         case resume = "resume"
         case future_projects = "future_projects"
     }
@@ -21,7 +19,7 @@ struct MyWebsite: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://reedtaylor.org")!
     var name = "Reed Taylor"
-    var description = "Reed's Blog and Portfolio"
+    var description = "Hi, I'm Reed 👋🏼"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
@@ -37,12 +35,8 @@ try MyWebsite().publish(
                     section.title = "Future Projects"
                 case .posts:
                     section.title = "Posts"
-                case .daiscover:
-                    section.title = "Daiscover"
-                case .overdrive:
-                    section.title = "Overdrive"
-                case .scrum:
-                    section.title = "ScrumPokerCards"
+                case .projects:
+                    section.title = "Projects"
                 case .resume:
                     section.title = "Resume"
                 }

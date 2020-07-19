@@ -1,3 +1,41 @@
+# [ScrumStorySizer](https://github.com/reedptaylor/ScrumPokerCards)
+
+Scrum User Story Sizing Blazor App
+
+<p align="center">
+<img src="/images/scrum.png" width="200" style="border-radius: 25px;" title="Icon">
+</p>
+
+This app is built with Blazor WebAssembly (and previously Blazor Server) and servers as a way to vote on User Story sizes during sprint planning.
+
+[Blazor Server Blog Post](/posts/new-project-scrum)
+
+[Blazor WebAssembly Blog Post](/posts/new-project-scrum-wa)
+
+[Example server](https://scrum.reedtaylor.org)
+
+---
+
+# Overdrive: Car Dashboard
+
+<p align="center">
+<img src="/images/overdrive.png" width="200" title="Icon">
+</p>
+
+A speedometer/GPS iOS app that provides a map and current conditions while diriving. Built with SwiftUI and UIKit.\
+Uses OpenWeatherMap for weather and Apple Maps for map.\
+[Available for free on Apple App Store](https://apps.apple.com/us/app/overdrive-car-dashboard/id1479640453)
+
+#### Do not take eyes off the road when driving. Overdrive assumes no responsibility for accidents.
+
+## Features
+* Compass with direction and animation
+* Speedometer
+* Current street name
+* Current local weather
+
+---
+
 # Daiscover: Flower Identification
 
 <p align="center">
