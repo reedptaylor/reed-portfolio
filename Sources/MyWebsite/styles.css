@@ -84,6 +84,11 @@ a {
     color: inherit;
 }
 
+.cartoon {
+    width: 250px;
+    float: right;
+}
+
 .description {
     margin-bottom: 40px;
 }
@@ -173,5 +178,8 @@ footer {
 @media(max-width: 600px) {
     .wrapper {
         padding: 40px 20px;
+    }
+    .cartoon {
+        width: 200px;
     }
 }
