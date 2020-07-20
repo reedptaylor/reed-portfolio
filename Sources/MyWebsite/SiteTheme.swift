@@ -16,7 +16,7 @@ extension Theme where Site == MyWebsite {
                 .body(
                     .header(for: context, selectedSection: nil),
                     .wrapper(
-                        .h1(.text(context.site.description)),
+                        .h1(.text(context.site.description), .img(.src(Path.init("images/cartoon.png")), .attribute(named: "style", value: "float:right;width:250px;"))),
                         .div(
                             .raw(index.body.html)
                         ),
