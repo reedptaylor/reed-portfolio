@@ -17,8 +17,39 @@ To address the first and second constraint, I decided to put a transistor across
 
 It took a little more experimentation to find a way to read the state of the device for the third constraint. I found that if the device was on, it would power a small computer fan inside with 5V. I could then use this as an input to a transistor to power a [pull-up resistor circuit](https://www.electronics-tutorials.ws/logic/pull-up-resistor.html) for the input to another pin on the microcontroller. In the main loop of the program, the microcontroller is checking for a voltage on that input pin to see if the diffuser is on or not. If it detects a voltage, it will notify the Homekit protocol of an update in state and would see the status change on my phone.
 
-<p align="center">
-<img src="/images/circuit1.jpg">
-</p>
+<img src="/images/diffuser.jpeg" alt="circuit on breadboard" style="width:50%;"/>
+<img src="/images/diffuser.gif" alt="completed project" style="width:50%;"/>
+
+```
+
+           1kΩ
+            +--------------------------+
+            |                          |
+            |                          |
+            |             +------------+
++-----------+---------+   |            |
+|          3.3V       |   |            |              +----------------+
+|                     |   |         +--+--+    10kΩ   |                |
+|               GPIO16+---+         | FET +-----------+5V POWER        |
+|                STATE|             +--+--+           |   SIGNAL       |
+|                INPUT|                |              |                |
+|                     |                |              |                |
+|       ESP32         |     +----------+              |   Diffuser     |
+|                     |     |                         |                |
+|                     |     |                         |                |
+|         CONTROL     |     |    +--------+           |                |
+|         OUTPUT   GND+----------+  GND   +-----------+GND      PWR    |
+|          GPIO4    5V+----------+5V   24V+-----------+24V     BUTTON  |
++-----------+---------+          +--------+           +--------+----+--+
+            |                                                  |    |
+            |         +----------------------------------------+    |
+            |       +-----+                                         |
+            +-------+ FET |                                         |
+            10kΩ    +-----+                                         |
+                       +--------------------------------------------+
+
+
+
+```
 
 Once I finished prototyping, I soldered all of the wires together and placed the electronics inside of the diffuser body with the other electronics. After a few fried transistors I had gotten it all working. It was a very fun project to work on and I'm excited for what comes next.
