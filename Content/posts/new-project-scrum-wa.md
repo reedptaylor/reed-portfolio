@@ -14,4 +14,4 @@ Blazor WebAssembly has been very nice to use so far and it has been freeing to w
 
 I updated my [example server](https://poker.reedtaylor.org) to start using the WebAssembly version.
 
-Check out my progress or contribute on [GitHub](https://github.com/reedptaylor/ScrumPokerCards)
+Check out my progress or contribute on [GitHub](https://github.com/reedptaylor/ScrumStorySizer)

@@ -10,4 +10,4 @@ Hello, recently I became Scrum certified and one of the take aways from the trai
 
 There are two screens, one for the Scrum Master and one for the rest of the Scrum Team. The Scrum Master screen allows the Scrum Master to enter the story name, stop the voting, and start a new story (or repeat to find consensus). The normal screen allows a user to enter a name and vote on the size of a story. After voting, they wait for the Scrum Master to end the voting revealing the votes (or change their vote before voting ends).
 
-Blazor Server is very powerful, especially for a use case with only one team using the site (the variables are stored in a Singleton service). Check out my progress or contribute on [GitHub](https://github.com/reedptaylor/ScrumPokerCards)
+Blazor Server is very powerful, especially for a use case with only one team using the site (the variables are stored in a Singleton service). Check out my progress or contribute on [GitHub](https://github.com/reedptaylor/ScrumStorySizer/tree/legacy/blazor-server)

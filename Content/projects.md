@@ -1,4 +1,4 @@
-# [ScrumStorySizer](https://github.com/reedptaylor/ScrumPokerCards)
+# [ScrumStorySizer](https://github.com/reedptaylor/ScrumStorySizer)
 
 Scrum User Story Sizing Blazor App
 
