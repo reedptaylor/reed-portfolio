@@ -5,11 +5,21 @@
 #### Graduated: 2019
 
 ## Silvergate Bank
-### Software Engineer
-#### August 2019 - Present (7 months)
-##### Greater San Diego Area
-* API Development: Working on a modern, RESTful payments API that allows customers to query, initiate, and approve wire transactions from their accounts. 
-* Web Application Development: Working with the .NET Core and JavaScript technologies to create a modern web application with identity management and connection to our backend systems.
+### Lead Software Engineer, Software Engineer III, Software Engineer II, Software Engineer
+#### August 2019 - Present (current)
+##### Greater San Diego Area/Remote
+* Actively contributed to our code base using languages such as C#, HTML, CSS, Javascript, OAuth, YAML files, SQL scripts, Bash, and Powershell.
+* Worked with our security team to address vulnerabilities from static and dynamic testing.
+* Lead our effort to bring UI development in house by adopting Blazor WebAssembly SPA framework to allow for
+an easier transition for our developers to begin writing UI code with a C# background.
+* Contributed to our major application refactor to split a Monolithic application into microservices.
+* Implemented a scalable network architecture using technologies such as Azure Front Door, Azure APIM, AKS,
+Redis, SignalR, Helm, and Istio to support a multi cluster/region environment.
+* Helped design and maintain our SQL database schemas and infrastructure through EF Core Migrations.
+* Earned my Scrum Master Certification and helped our team develop an Agile Manifesto as we transitioned to
+Scrum from waterfall.
+* Defined our DevOps pipeline flow, branching strategies, and code publishing scripts.
+* Lead a small team of developers and helped guide them towards career advancement opportunities.
 
 ## UC Santa Barbara
 ### Network Consultant

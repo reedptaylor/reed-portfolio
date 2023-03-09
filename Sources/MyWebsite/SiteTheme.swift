@@ -222,8 +222,8 @@ private extension Node where Context == HTML.BodyContext {
                 .href("https://github.com/reedptaylor")
             ), .text(" | "),
             .a(
-                .text("Twitter"),
-                .href("https://twitter.com/reedptaylor")
+                .text("Mastodon"),
+                .href("https://hachyderm.io/@reedptaylor")
             ), .text(" | "),
             .a(
                 .text("RSS"),

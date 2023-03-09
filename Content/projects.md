@@ -58,3 +58,16 @@ This project uses a "FlowerOrNot" classify to first see if a photo has a flower 
 ## Acknowledgements
 Google images download (https://github.com/hardikvasa/google-images-download)  
 VGG Flower Dataset (http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html)
+
+---
+
+# Cloud Control Senior Capstone (UCSB)
+
+<p align="center">
+<img src="/images/cloudcontrol.png" width="200" style="border-radius: 25px;" title="Icon">
+</p>
+
+* Worked with AeroVironment to create a speaker module with very tight size and weight constraints to attach to a drone for crowd control applications
+* Designed PCB, wrote C embedded programs, and wrote end-user software and UI (Python and Java)
+
+[More informaiton](https://sites.google.com/view/ucsbcloudcontrol/home)

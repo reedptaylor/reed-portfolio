@@ -9,7 +9,6 @@ struct MyWebsite: Website {
         case posts = "posts"
         case projects = "projects"
         case resume = "resume"
-        case future_projects = "future_projects"
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
@@ -31,8 +30,6 @@ try MyWebsite().publish(
         .step(named: "Default section titles") { context in
             context.mutateAllSections { section in
                 switch section.id {
-                case .future_projects:
-                    section.title = "Future Projects"
                 case .posts:
                     section.title = "Posts"
                 case .projects:
