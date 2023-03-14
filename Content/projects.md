@@ -50,7 +50,7 @@ A machine learning based iOS app that allows you to identify flowers from your c
 Source code for my iOS app that uses a deep learning image classifier to classify over 103 different species of flowers. Trained on a self augmented version of the VGG Flower dataset.
 
 ## Dataset
-To create the datset for training with Apple's CreateML, I used the large VGG Flower dataset (found here http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) along with around 100-200 suplemental images dowloaded from Google for each of the categories.
+To create the dataset for training with Apple's CreateML, I used the large VGG Flower dataset (found here http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) along with around 100-200 supplemental images dowloaded from Google for each of the categories.
 
 ## Models
 This project uses a "FlowerOrNot" classify to first see if a photo has a flower in it, then performs flower classification on the "FlowerClassifier" model.
@@ -70,4 +70,4 @@ VGG Flower Dataset (http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html)
 * Worked with AeroVironment to create a speaker module with very tight size and weight constraints to attach to a drone for crowd control applications
 * Designed PCB, wrote C embedded programs, and wrote end-user software and UI (Python and Java)
 
-[More informaiton](https://sites.google.com/view/ucsbcloudcontrol/home)
+[More information](https://sites.google.com/view/ucsbcloudcontrol/home)
